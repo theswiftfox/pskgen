@@ -1,0 +1,20 @@
+[package]
+name = "pskgen"
+version = "0.1.0"
+edition = "2021"
+authors = ["Elena Gantner <elena.gantner@gmail.com>"]
+publish = false
+license = "MIT"
+
+[dependencies]
+pbkdf2 = { version = "0.12" }
+rpassword = { version = "7.3.1" }
+sha1 = { version = "0.10.6" }
+
+[profile.release]
+opt-level = 3          # Optimize for speed.
+lto = "thin"           # Enable Link Time Optimization
+codegen-units = 1      # Reduce number of codegen units to increase optimizations.
+debug = false
+overflow-checks = true
+strip = "debuginfo"
