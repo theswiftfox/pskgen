@@ -1,8 +1,11 @@
 [package]
 name = "pskgen"
+description = "A simple PSK generator."
 version = "0.1.0"
 edition = "2021"
 authors = ["Elena Gantner <elena.gantner@gmail.com>"]
+homepage = "https://github.com/theswiftfox/pskgen/tree/main"
+repository = "https://github.com/theswiftfox/pskgen/tree/main"
 publish = false
 license = "MIT"
 
